@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".RegisterActivity"
+android:orientation="vertical"
+android:background="@drawable/bgtotol">
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:layout_alignParentTop="true"
+            android:text="Hello Pet"
+            android:textSize="63sp"
+            android:textStyle="bold"
+            android:gravity="top"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:text="Lovers"
+            android:textStyle="bold"
+            android:textSize="63sp"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:text="sign up or login to enjoy our service"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+    android:layout_marginTop="30dp">
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/edt_firstN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="First Name"
+        android:importantForAutofill="no"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/edt_lastN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Last Name"
+        android:importantForAutofill="no"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/edt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Phone Number"
+        android:importantForAutofill="no"
+        android:inputType="phone"/>
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:id="@+id/register"
+        android:textColor="#000000"
+        android:backgroundTint="@color/colorOrange"
+        android:layout_gravity="center"/>
+</LinearLayout>
+</LinearLayout>

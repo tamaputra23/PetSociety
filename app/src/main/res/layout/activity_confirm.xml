@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/what_you_wa"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:text="@string/make_sure_y"
+            android:textAppearance="@style/what_you_wa" />
+
+        <TextView
+            android:id="@+id/your_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/what_you_wa"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:text="Your pet"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_petname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/what_you_wa"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="right|top"
+            android:text="tamtam"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/your_pet"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:text="Type"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_pettype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_petname"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="right|top"
+            android:text="Cat - Anggora"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/price_estim"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/type"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:text="Price Estimate"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_priceest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pettype"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="right|top"
+            android:text="200000"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/delivery_fe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price_estim"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:text="Delivery Fee"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_priceest"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="right|top"
+            android:text="15000"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/total_payme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delivery_fe"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="40dp"
+            android:gravity="top"
+            android:text="Total Payment"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_delivery"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="right|top"
+            android:text="215000"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cencel"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="49dp"
+            android:background="@drawable/rectangle4"
+            android:onClick="cencel"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_checkout"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="49dp"
+            android:layout_toEndOf="@+id/btn_cencel"
+            android:background="@drawable/rectangle5"
+            android:onClick="checkout"
+            android:text="Check-Out"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

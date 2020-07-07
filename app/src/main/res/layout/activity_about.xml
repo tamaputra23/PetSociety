@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite">
+    <ImageButton
+        android:id="@+id/rectangle_2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:onClick="back"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icons8back26"
+        android:scaleType="fitXY"
+        android:background="@drawable/rectangle2"
+        />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rectangle4"
+        android:onClick="logout"
+        android:text="Sign-Out"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="366dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="Your Order"
+        android:textSize="64sp"
+        android:textColor="@android:color/black"
+        android:gravity="top"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/est_Linear"
+        android:layout_below="@+id/order"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/est_Linear"
+        android:layout_alignParentBottom="true"
+        android:background="#F79F79">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/about_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL"
+                android:textSize="30dp"
+                android:gravity="top"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/you_can_com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 127000,-"
+                android:textSize="25dp"
+                android:textAppearance="@style/you_can_com" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

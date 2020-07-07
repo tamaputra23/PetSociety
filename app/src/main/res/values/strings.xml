@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PetSociety</string>
+    <string name="welcome_">Welcome.</string>
+    <string name="about_us">About Us</string>
+    <string name="you_can_com">You can come to out shop at :\njl. Kejayaan no. 12\nphone : 08123456789\n</string>
+    <string name="what_you_wa">what you want us to do?</string>
+    <string name="fill_the_fo">fill the form first so we can know what to do</string>
+    <string name="what_we_sho">what we should call your pet?</string>
+    <string name="make_sure_y">make sure your order</string>
+    <string name="payment_che">Payment Check</string>
+    <string name="show_this_t">show this to our cashier or courier \nto continue the payment</string>
+    <string name="hotel_room_">hotel room service?</string>
+
+
+    <string-array name="pet_option">
+        <item>Cat</item>
+        <item>Dog</item>
+    </string-array>
+    <string-array name="grooming_option">
+        <item>Regular</item>
+        <item>Fungus Infection</item>
+        <item>Flea</item>
+        <item>Complete</item>
+    </string-array>
+    <string-array name="stay_long">
+        <item>1 day</item>
+        <item>2 day</item>
+        <item>3 day</item>
+    </string-array>
+
+</resources>

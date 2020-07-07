@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <ImageButton
+        android:id="@+id/rectangle_2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:onClick="back"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icons8back26"
+        android:scaleType="fitXY"
+        android:background="@drawable/rectangle2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_confirm"
+        android:layout_below="@+id/rectangle_2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:id="@+id/what_you_wa"
+                        android:layout_width="366dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:text="@string/hotel_room_"
+                        android:textAppearance="@style/what_you_wa" />
+
+                    <TextView
+                        android:id="@+id/fill_the_fo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_below="@+id/what_you_wa"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:text="@string/fill_the_fo"
+                        android:textAppearance="@style/fill_the_fo" />
+
+                    <TextView
+                        android:id="@+id/what_we_sho"
+                        android:layout_width="248dp"
+                        android:layout_height="37dp"
+                        android:layout_below="@+id/fill_the_fo"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:text="@string/what_we_sho"
+                        android:textAppearance="@style/what_we_sho" />
+
+                    <EditText
+                        android:id="@+id/edt_NameHt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/what_we_sho"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:hint="Name"
+                        android:importantForAutofill="no"
+                        android:inputType="textEmailAddress" />
+
+                    <TextView
+                        android:id="@+id/what_pet_"
+                        android:layout_width="97dp"
+                        android:layout_height="37dp"
+                        android:layout_below="@+id/edt_NameHt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="top"
+                        android:text="What Pet?"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spPetTypeHt"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/what_pet_"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="0dp" />
+
+                    <TextView
+                        android:id="@+id/type_of_bath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spPetTypeHt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:text="How Long?"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spLongStay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/type_of_bath"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="0dp" />
+
+                    <TextView
+                        android:id="@+id/pick_up_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spLongStay"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:text="Pick-up Selection"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_groupHt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pick_up_sel"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp">
+
+                        <RadioButton
+                            android:id="@+id/rb_pickupht"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes, I wil pick up my pet"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_deliveryht"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No, please deliver her/him to my house"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_confirm"
+        android:onClick="confirm"
+        android:layout_width="375dp"
+        android:layout_height="175dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/buttonkucing"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="90dp"
+                android:text="Estimation Price"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_priceHt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:text="Rp 0.00"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

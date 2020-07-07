@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "427334223875",
+    "firebase_url": "https://petsociety-de748.firebaseio.com",
+    "project_id": "petsociety-de748",
+    "storage_bucket": "petsociety-de748.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427334223875:android:ddea763fb2eef146046636",
+        "android_client_info": {
+          "package_name": "com.example.petsociety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427334223875-fhrld5jhgi2shnh6rtfjr9jmfv9thdj0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petsociety",
+            "certificate_hash": "29a41f401c27a23e89148aeb6ad94c3c35c32663"
+          }
+        },
+        {
+          "client_id": "427334223875-8rkq7ipuc579fbdc7s9shlagme8kova2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiC-cjILF77uud2vF03BNw3cmstbb00Q4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427334223875-8rkq7ipuc579fbdc7s9shlagme8kova2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

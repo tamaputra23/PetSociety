@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite">
+    <TextView
+        android:id="@+id/welcome_"
+        android:layout_width="394dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/welcome_"
+        android:textAppearance="@style/welcome_"
+        android:gravity="top"
+        />
+
+    <GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+        <Button
+            android:id="@+id/btn_needs"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle"
+            android:elevation="4dp"
+            android:onClick="needs"
+            android:text="Needs"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_boarding"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle"
+            android:elevation="4dp"
+            android:onClick="boarding"
+            android:text="Pet\nBoarding"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_grooming"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangle"
+            android:elevation="4dp"
+            android:onClick="grooming"
+            android:text="Grooming"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangle"
+            android:elevation="4dp"
+            android:onClick="about"
+            android:text="YOUR \nOrder"
+            android:textSize="20sp" />
+    </GridLayout>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/grid1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icons8information100"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorWhite"
+        android:onClick="info"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/kucing"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="320dp" />
+
+</RelativeLayout>

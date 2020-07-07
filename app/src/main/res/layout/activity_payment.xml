@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <ImageButton
+        android:id="@+id/rectangle_2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:onClick="back"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icons8back26"
+        android:scaleType="fitXY"
+        android:background="@drawable/rectangle2"
+        />
+
+    <RelativeLayout
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rectangle_2"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/what_you_wa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:text="@string/payment_che"
+            android:textAlignment="center"
+            android:textAppearance="@style/payment_che" />
+
+        <TextView
+            android:id="@+id/your_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/what_you_wa"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="50dp"
+            android:gravity="top"
+            android:text="Your pet"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/tv_jumlahCo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/what_you_wa"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="207dp"
+            android:layout_marginTop="50dp"
+            android:gravity="top"
+            android:text="0"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_petnamepay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/what_you_wa"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="right|top"
+            android:text="tamtam"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/your_pet"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:text="Type"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_pettypepay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_petnamepay"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="right|top"
+            android:text="Cat - Anggora"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/price_estim"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/type"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:text="Price Estimate"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_priceestpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pettypepay"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="right|top"
+            android:text="200000"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/delivery_fe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price_estim"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:text="Delivery Fee"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_deliverypay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_priceestpay"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="right|top"
+            android:text="15000"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/total_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delivery_fe"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="35dp"
+            android:gravity="top"
+            android:text="Total Payment"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_totalpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_deliverypay"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="right|top"
+            android:text="215000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/show_this_t"
+            android:layout_width="273dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="500dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/show_this_t"
+            android:textAppearance="@style/show_this_t" />
+
+        <TextView
+            android:id="@+id/tv_ordercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/show_this_t"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="order code"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>
